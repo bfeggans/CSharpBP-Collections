@@ -29,7 +29,6 @@ namespace Acme.Biz
             return vendor;
         }
 
-<<<<<<< HEAD
         public T RetrieveValue<T>(string sql, T defaultValue)
         {
             //Ignore the SQL string for now and just return the def value
@@ -37,8 +36,6 @@ namespace Acme.Biz
             return value;
         }
 
-=======
->>>>>>> 1914c218c7bb3528d80a2209924444d08d8cea63
         /// <summary>
         /// Save data for one vendor.
         /// </summary>
