@@ -24,7 +24,11 @@ namespace Acme.Biz
         /// <param name="deliverBy">Requested delivery date.</param>
         /// <param name="instructions">Delivery instructions.</param>
         /// <returns></returns>
+<<<<<<< HEAD
         public OperationResult<bool> PlaceOrder(Product product, int quantity,
+=======
+        public OperationResult PlaceOrder(Product product, int quantity,
+>>>>>>> 1914c218c7bb3528d80a2209924444d08d8cea63
                                             DateTimeOffset? deliverBy = null,
                                             string instructions = "standard delivery")
         {
@@ -61,7 +65,11 @@ namespace Acme.Biz
             {
                 success = true;
             }
+<<<<<<< HEAD
             var operationResult = new OperationResult<bool>(success, orderText);
+=======
+            var operationResult = new OperationResult(success, orderText);
+>>>>>>> 1914c218c7bb3528d80a2209924444d08d8cea63
             return operationResult;
         }
 
