@@ -23,5 +23,18 @@ namespace Acme.Biz.Tests
             // Assert
             Assert.AreEqual(vendors.Count(), 2);
         }
+
+        [TestMethod]
+        public void RetrieveVendorsEnumerableTest()
+        {
+            // Arrange
+            var repo = new VendorRepository();
+
+            // Act
+            var vendors = repo.RetrieveEnumerable().ToArray();
+
+            // Assert
+            Assert.AreEqual(vendors.Length, 2);
+        }
     }
 }
