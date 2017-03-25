@@ -11,6 +11,17 @@ namespace Acme.Biz.Tests
     [TestClass()]
     public class VendorRepositoryTests
     {
+        [TestMethod]
+        public void RetrieveVendorsTest()
+        {
+            // Arrange
+            var repo = new VendorRepository();
 
+            // Act
+            var vendors = repo.Retrieve();
+
+            // Assert
+            Assert.AreEqual(vendors.Count(), 2);
+        }
     }
 }

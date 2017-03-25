@@ -29,6 +29,17 @@ namespace Acme.Biz
             return vendor;
         }
 
+        public List<Vendor> Retrieve()
+        {
+            var vendors = new List<Vendor>()
+            {
+              new Vendor() {VendorId=1, CompanyName="Blake's Company", Email="123@abc.com"},
+              new Vendor() {VendorId=2, CompanyName="Cool Company", Email="123@abc.com"}
+            };
+
+            return vendors;
+        }
+
         public T RetrieveValue<T>(string sql, T defaultValue)
         {
             //Ignore the SQL string for now and just return the def value
